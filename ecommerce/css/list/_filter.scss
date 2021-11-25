@@ -1,0 +1,124 @@
+.tshirt__filterBtn {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: $zindex-offcanvas;
+
+    font-size: 1.3rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2)
+}
+
+.filter {
+    $colorSize: 1.25rem;
+    $transitionDuration: .4s;
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: $zindex-offcanvas;
+
+    background-color: rgba(0,0,0,0.6);
+    transition: background-color $transitionDuration ease;
+
+    // when closed
+    &:not(.filter--open) {
+        background-color: rgba(0,0,0,0);
+        pointer-events: none;
+
+        .filter__container {
+            transform: translateX(100%);
+        }
+
+    }
+    &__container {
+        width: 80%;
+        margin-left: auto;
+        background-color: $light;
+        height: 100%;
+        padding: 1rem;
+        position: relative;
+        transition: transform $transitionDuration ease;
+    }
+
+    &__close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 1.6rem;
+    }
+
+    &__label {
+        font-weight: 500;
+    }
+
+    input:not(:checked)+.size__label {
+        text-decoration: line-through;
+        color: $text-muted;
+    }
+
+    .color__label {
+        width: $colorSize;
+        height: $colorSize;
+        border-radius: 50%;
+        display: inline-block;
+        border: 1px solid $body-color;
+        vertical-align: middle;
+
+        &--yellow {
+            background-color: $yellow;
+        }
+        &--red {
+            background-color: $red;
+        }
+        &--purple {
+            background-color: $purple;
+        }
+        &--green {
+            background-color: $green;
+        }
+        &--blue {
+            background-color: $blue;
+        }
+        &--white {
+            background-color: $white;
+        }
+        &--black {
+            background-color: $black;
+        }
+    }
+
+    input:not(:checked)+.color__label {
+        width: $colorSize * 0.7;
+        height: $colorSize * 0.7;
+        margin:  $colorSize * 0.3 * 0.5; // add margins to prevent colors from moving when resizing
+        text-decoration: line-through;
+        color: $text-muted;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform:
+                translate(-50%)
+                rotate(45deg);
+            height: 1px;
+            background-color: #000;
+            width: $colorSize;
+            display: block;
+        }
+    }
+
+    .price__input {
+        width: 80px;
+    }
+
+}
+
+

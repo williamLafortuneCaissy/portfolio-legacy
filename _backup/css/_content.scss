@@ -1,0 +1,401 @@
+// "Layouts change. Components are fluid".
+// Parties reutilisables du design. C'est la chair du site. (sections dans une sidebar, navigation, liste de produits, produits, callout)
+// Chaque module doit etre pense pour exister independamment pour conserver la flexibilite de la page.
+// Les modules pourraient normalement etre deplaces dans le site ou vers un autre site sans se casser.
+// On doit donc resister a la tentation d'utiliser des selecteurs d'element s'ils ne sont pas semantiques (span, div) en ajoutant plutot des classes communes.
+// Utiliser les selecteurs enfant (>) le plus possible, mais en respectant la loi d'Inception.
+/* ACCUEIL */
+.home {
+    &_container {
+        margin-top: $medium;
+    }
+
+    &_section {
+        padding: $large $small;
+
+        &:nth-child(even) {
+            // background-color: #f2f2f2;
+        }
+
+        &_wrapper {
+            max-width: 992px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+        }
+    }
+
+    &_quote {
+
+        &_image {
+            max-width: 175px;
+            border-radius: 50%;
+        }
+
+        &_text {
+            font-size: inherit;
+            line-height: 1.5em;
+        }
+    }
+
+    &_title{
+        font-size: 7.5vw;
+        font-weight: bold;
+
+        &_caption{
+            font-size: .8em;
+            font-weight: normal;
+            display: block;
+        }
+    }
+}
+.wave {
+    position: relative;
+    line-height: 1.5em;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top: 100px solid $waveColorSecondary;
+    border-bottom: 100px solid $waveColorPrimary;
+    background-color: $waveColorPrimary;
+    color: #fff;
+
+    &_tab_wrapper{
+        display: flex;
+        justify-content: center;        
+        position: absolute;
+        top: -100px;
+        left: 50%;
+
+        -moz-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+
+    }
+
+    &_tab_container{
+        transform: scaleX(3);
+    }
+
+    &_tab{
+        /* to edit, remove rotate*/
+        border: $waveTabMobile solid $waveColorPrimary;
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+        transform: rotate(-45deg); 
+        border-top-right-radius: $waveTabMobile;
+
+        &_arrow{
+            border: 5px solid transparent;
+            border-top-color: #fff;
+            position: absolute;
+            top: 25%;
+            z-index: 1; 
+        }
+    }
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        right: 0;
+        background-color: $waveColorSecondary;
+    }
+
+    &_top,
+    &_bottom {
+        position: relative;
+        text-align: center;
+        padding: 0 $large;
+        min-height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &_top {
+        background-color: $waveColorPrimary;
+        border-bottom-right-radius: 75px;
+        border-top-right-radius: 75px;
+    }
+
+    &_bottom {
+        color: #fff;
+        background-color: $waveColorSecondary;
+        border-top-left-radius: 75px;
+        border-bottom-left-radius: 75px;
+    }
+}
+
+.dynamic{ 
+    background-color: #f2f2f2;
+    position: relative;
+
+    &_bg{
+        position: absolute;
+        top: 200px;
+        bottom: 100px;
+        left: 0;
+        right: 0;
+        background-color: #333;
+        -moz-transform: skew(0deg, -10deg);
+        -webkit-transform: skew(0deg, -10deg);
+        -o-transform: skew(0deg, -10deg);
+        -ms-transform: skew(0deg, -10deg);
+        transform: skew(0deg, -10deg);
+    }
+
+    &_container{
+        position: relative;/* to go over the _bg */
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    &_title{
+        text-align: left;
+        padding: 0 $small;
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.2em;
+        margin-bottom: 60px;
+    }
+
+    &_item{
+        background-color: #fff;
+        border: 1px solid #dadada;
+        margin-bottom: 15px;
+        padding: 15px;
+        line-height: 1.5em;
+
+        &_title{
+            font-size: 25px;
+            line-height: 1.2em;
+            margin-bottom: $small;
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+        }
+
+        &_text{
+            margin-bottom: $small;
+
+            & em{
+                font-weight: bold;
+            }
+        }
+
+    }
+}
+
+/*.carousel {
+    & img {
+        width: 100%;
+    }
+}*/
+/* TYPE */
+.gallerie {
+    margin: 0 auto;
+    max-width: 1315px;
+    text-align: center;
+
+    &_projet {
+        position: relative;
+
+        &_img {
+            // -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            // filter: grayscale(100%);
+            width: 100%;
+        }
+
+        & .overlay {
+            opacity: 0; //display:off
+            transition: 0.5s;
+            text-align: center;
+            padding: $small;
+            background-color: rgba(0,0,0,0.5);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            &_text {
+                color: #fff;
+                position: absolute;
+                top: 45%;
+                left: 0;
+                right: 0;
+                font-size: 20px;
+
+                &_hint{
+                    display: block;
+                    color: #aaa;
+                }
+            }
+        }
+        //_projet
+        &:hover {
+            .overlay {
+                opacity: 1; //display:on
+                transition: 0.5s;
+            }
+        }
+    }
+}
+.profil_professionnel {
+    padding: $large 0;
+}
+
+
+/* PAGE PROJET */
+.project_button{
+    margin-bottom: $medium;
+    margin-right: 10px;
+}
+.projet_source_wrapper{
+    display: none;
+    position: relative;
+}
+.projet
+.projet_source{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.projet_source_list{
+  padding-left: 75px;
+}
+.project_video{
+    width: 100%;
+    height: 50vw;
+}
+
+/* PAGE PROJET PROG */
+.projetProg_code_wrapper {
+    margin-top: $medium;
+    border: 1px solid #dadada;
+    height: 500px;
+    overflow: auto;
+    padding: 20px;
+}
+.projetProg_code_img{
+  min-width: 1200px;
+}
+
+/* PAGE PROJET DESIGN */
+.projetDesign_tag_relative{
+    position: relative;
+}
+.projetDesign_tag {
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+
+.projectDesign_carousel_nav_dot {
+    position: relative;
+    display: block;
+    //projectDesign_carousel_nav_dot::before
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 5;
+        opacity: 0;
+        transition: 0.5s;
+        background-color: #fff;
+    }
+}
+
+.projectDesign_carousel_nav .uk-active .projectDesign_carousel_nav_dot::before {
+    opacity: 0.5;
+}
+@media (max-width: 767px) {
+    .projectDesign_carousel_nav {
+        margin-top: $small;
+    }
+
+    .projectDesign_model {
+        text-align: center;
+    }
+}
+/* DESKTOP AND TABLET ONLY */
+@media (min-width: 768px) {
+    .dynamic{
+        padding: 80px 0;
+
+        &_bg{
+            top: 210px;
+            bottom: 250px;
+        }
+
+        &_container{
+            max-width: 750px;
+            margin: 0 auto;
+
+            &>*{
+                float: left;
+                width: 48%;
+            }
+        }
+
+        &_item{
+            margin-bottom: 4%;
+            padding: $medium;
+
+            &:nth-child(2n){
+                float: right;
+            }
+        }
+    }
+
+    .projectDesign {
+        &_carousel {
+            //projectDesign_carousel_img
+            //projectDesign_carousel_nav
+            &_img,
+            &_nav {
+                float: left;
+                max-width: 50%;
+            }
+            //projectDesign_carousel_img
+            &_img {
+                height: 100% !important;
+            }
+            //projectDesign_carousel_nav
+            &_nav {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .home_quote_text{
+        font-size: 1.25em;
+    }
+
+    .wave{
+        font-size: 1.5em;
+
+        &_tab{
+            border-width: $waveTabDesktop;
+            border-top-right-radius: $waveTabDesktop;
+
+            &_arrow{
+                border-width: 8px;
+            }            
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .home_title{
+        font-size: 90px;
+    }
+}

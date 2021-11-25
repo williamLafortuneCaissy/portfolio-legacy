@@ -1,0 +1,39 @@
+.tshirt {
+    $smallPrice: .8rem;
+
+    padding: 1rem;
+    border-bottom: $border-color 1px solid;
+
+    &__container {
+        max-width: 420px;
+    }
+
+    &__img {
+        width: 60%;
+        margin: 0 auto;
+        display: inline-block;
+    }
+
+    &__price {
+        line-height: 1;
+        font-size: 1.2rem;
+        vertical-align: top;
+
+        &--old {
+            text-decoration: line-through;
+            font-size: $smallPrice;
+        }
+    }
+
+    &__cents {
+        line-height: 1;
+        font-size: $smallPrice;
+        vertical-align: top;
+    }
+
+    &__stars {
+        font-size: 1.4rem;
+    }
+}
+
+@import 'filter';

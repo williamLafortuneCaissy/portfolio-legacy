@@ -1,0 +1,27 @@
+* {
+	font-family: 'Roboto', sans-serif;
+	// lato
+}
+
+.testbox {
+	padding: 5px;
+	border: 1px solid;
+}
+
+.show_print {
+	display: none;
+}
+
+@media print {
+	.show_print {
+		// not yet tested
+		display: block;
+	}
+}
+
+.unfinished {
+	background-color: rgba(yellow, .5);
+	padding: .5rem;
+	margin: -.5rem;
+}
+

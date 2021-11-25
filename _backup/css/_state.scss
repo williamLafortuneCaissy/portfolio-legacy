@@ -1,0 +1,9 @@
+// Definit de quoi auront l'air les modules ou les layouts dans un etat particulier (cache, grossi, actif, inactif, verrouille, glisse, sur la page principale, mobile...)
+// Les etats sont des classes qu'on additionnent aux modules ou aux layouts et dont le nom débute souvent par "is-" (ex: is-locked, is-dragged, is-active).
+// Les etats alterent ne definissent pas completement le visuel d'un module/layout, il ne font que l'alterer (ecraser et/ou ajouter des proprietes)
+// Il peut etre possible d'y utiliser !important si necessaire. Soyez parcimonieux.
+
+
+/*.nav_wrapper_link:hover .subNav{
+    display: block;
+}*/

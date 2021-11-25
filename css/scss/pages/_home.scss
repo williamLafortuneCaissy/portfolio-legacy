@@ -1,0 +1,45 @@
+.home__section {
+	padding: 50px;
+	background-color: #fff;
+}
+
+.home__section:nth-of-type(2n+1) {
+	background-color: #f2f2f2;
+}
+
+.section_cv {
+	padding: 75px 0;
+
+	h2 {
+		text-align: center;
+		margin-bottom: 50px;
+	}
+}
+ 
+.sidelines {
+	display: flex;
+	align-items: center;
+
+	&::before,
+	&::after {
+		content:"";
+		display:block;
+		border-top: 1px solid currentColor;
+		flex-grow: 1;
+		margin: 0 1rem;
+	}
+}
+ 
+@import 'home/cv';
+@import 'home/hero';
+@import 'home/peach'; 
+@import 'home/tempHero'; 
+
+
+.btn-ecommerce {
+	display: inline-block;
+	padding: .5rem 1rem;
+	background-color: $primary;
+	color: #fff;
+	text-decoration: none;
+}

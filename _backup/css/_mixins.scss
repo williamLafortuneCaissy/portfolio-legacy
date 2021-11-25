@@ -1,0 +1,8 @@
+//mq: Genere des media queries selon le type d'ecran fourni. 
+//$ecran: Doit correspondre aux noms declares sous le tableau $breakpoints (small,medium,large,x-large)
+@mixin mq($ecran){
+    $largeur:map-get($breakpoints,$ecran);
+    @media screen and (min-width:$largeur){
+        @content;
+    }
+}

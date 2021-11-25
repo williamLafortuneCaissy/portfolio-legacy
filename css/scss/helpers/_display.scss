@@ -1,0 +1,33 @@
+$display: (
+	"inline": inline,
+	"inline-block": inline-block,
+	"block": block,
+	"flex": flex,
+	"grid": grid,
+	"table": table,
+	"table-cell": table-cell,
+	"table-row": table-row,
+);
+
+@each $key, $value in $display {
+	.d-#{$key} {
+		display: $value !important; 
+	}
+}
+
+
+// flex utilities
+$align :(
+	"center": center,
+	"start": flex-start,
+	"end": flex-end,
+);
+
+@each $key, $value in $align {
+	.align-items-#{$key} {
+		align-items: $value;
+	}
+	.align-self-#{$key} {
+		align-self: $value;
+	}
+}

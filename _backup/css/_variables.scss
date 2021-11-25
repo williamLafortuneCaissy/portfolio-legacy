@@ -1,0 +1,34 @@
+//On declare ici les variables en les separant en categories (couleurs, polices, tailles, media queries...)
+
+//tailles
+$baseSize:16;
+
+//MediaQueries
+//Modifier les valeurs en fonction du design du site
+$breakpoints:(
+    'small':(640/$baseSize)*1em,
+    'medium':(960/$baseSize)*1em,
+    'large':(1024/$baseSize)*1em,
+    'x-large':(1280/$baseSize)*1em
+);
+
+$soft_border: 1px solid #ddd;
+$small: 15px;
+$medium: 25px;
+$large: 50px;
+$gallerie_item_padding: 35px;
+$font: 'Arimo', sans-serif;
+//$logo_color: #3F606F;
+$logo_color: #20959E;
+//$titleColor: #3F606F;
+$titleColor: #20959E;
+$footerHeight: 135px;
+
+//index
+$waveTabMobile: 25px;
+$waveTabDesktop: 40px;
+$waveColorPrimary: #20959E;
+$waveColorSecondary: #212121;
+
+$dynamicItemHeight: 400px;
+

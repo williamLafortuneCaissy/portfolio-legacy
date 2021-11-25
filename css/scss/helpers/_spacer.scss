@@ -1,0 +1,49 @@
+$spacers :(
+	"0": 0,
+	"1": .25rem,
+	"2": .5rem,
+	"3": 1rem,
+	"4": 1.5rem,
+	"5": 2rem,
+);
+
+$props :(
+	"m" : margin,
+	"ml": margin-left,
+	"mr": margin-right,
+	"mt": margin-top,
+	"mb": margin-bottom,
+	"p" : padding,
+	"pl": padding-left,
+	"pr": padding-right,
+	"pt": padding-top,
+	"pb": padding-bottom,
+);
+
+@each $suffix, $value in $spacers {
+	
+	@each $prefix, $property in $props {
+		.#{$prefix}-#{$suffix} {
+			#{$property}: $value !important;
+		} 
+	}
+
+	//x and y values
+	.mx-#{$suffix} {
+		margin-left: $value;
+		margin-right: $value;
+	}
+	.my-#{$suffix} {
+		margin-top: $value;
+		margin-bottom: $value;
+	}
+	.px-#{$suffix} {
+		padding-left: $value;
+		padding-right: $value;
+	}
+	.py-#{$suffix} {
+		padding-top: $value;
+		padding-bottom: $value;
+	}
+	
+}

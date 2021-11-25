@@ -1,0 +1,25 @@
+.hero {
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100vh;
+    position:relative;
+
+    &__container {
+        margin: auto;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: calc(1.375rem + 1.75vw);
+        font-weight: 500;
+        line-height: 1.2;
+        margin-bottom: .5rem;
+    }
+
+    &__subtitle {
+        font-size: calc(1rem + 0.6vw);
+        display: grid;
+        grid-template-columns: 1fr auto auto auto 1fr
+    }
+    
+}

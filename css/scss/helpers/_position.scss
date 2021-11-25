@@ -1,0 +1,29 @@
+$positions :(
+	"static"	: static,
+	"relative"	: relative,
+	"absolute"	: absolute,
+	"fixed"		: fixed,
+	"sticky"	: sticky,
+);
+@each $key, $value in $positions {
+	.position-#{$key} {
+		position: $value;
+	}
+}
+
+
+$props :(
+	"top"	: top,
+	"bottom": bottom,
+	"left"	: left,
+	"right"	: right,
+);
+@each $key, $value in $props {
+	//generates .top-0 and .top-100
+	.#{$key}-0 {
+		#{$value}: 0;
+	}
+	.#{$key}-100 {
+		#{$value}: 100%;
+	}
+}
