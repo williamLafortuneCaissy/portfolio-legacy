@@ -1,6 +1,13 @@
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -$gutters * 0.5;
+	margin-right: -$gutters * 0.5;
+}
+
 @mixin col() {
-	padding-left: $gutters / 2;
-	padding-right: $gutters / 2;
+	padding-left: $gutters * 0.5;
+	padding-right: $gutters * 0.5;
 }
 
 .col {
@@ -27,7 +34,7 @@
 	margin-left: auto;
 	margin-right: auto;
 
-	&--narrow { 
+	&--narrow {
 		max-width: 992px;
 	}
 }

@@ -3,13 +3,15 @@ $gutters: 2rem;
 
 $primary: #007f7f;
 $primaryBg: #cdeaea;
-// $primaryBg: #9CD8D8; 
+// $primaryBg: #9CD8D8;
 $secondary: #E4834F;
 $secondaryBg: #ffe2cb;
 // $secondaryBg: #EBC9AD;
 $btn-border-radius: 0;
+$borderColor: #dadada;
+$border: 1px solid $borderColor;
 
-$colorPrimary: $primary; 
+$colorPrimary: $primary;
 $colorLink: #0d6efd;
 
 $maxCol: 4;
@@ -19,4 +21,3 @@ $cvSeparatorSpacing: 3rem;
 $cvSeparatorSpacingV: 3rem + .25rem; // add couple of px to match the lineheight's spacing
 $cvBlockWidth: .5rem;
 $cvBlockSpacing: 4rem; // white bg's width
- 

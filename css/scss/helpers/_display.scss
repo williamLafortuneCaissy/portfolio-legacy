@@ -11,7 +11,7 @@ $display: (
 
 @each $key, $value in $display {
 	.d-#{$key} {
-		display: $value !important; 
+		display: $value !important;
 	}
 }
 
@@ -29,5 +29,19 @@ $align :(
 	}
 	.align-self-#{$key} {
 		align-self: $value;
+	}
+}
+
+$justify :(
+	"center": center,
+	"start": flex-start,
+	"end": flex-end,
+	"around": around,
+	"between": between,
+);
+
+@each $key, $value in $align {
+	.justify-content-#{$key} {
+		justify-content: $value;
 	}
 }

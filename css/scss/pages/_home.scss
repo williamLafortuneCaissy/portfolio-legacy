@@ -15,7 +15,7 @@
 		margin-bottom: 50px;
 	}
 }
- 
+
 .sidelines {
 	display: flex;
 	align-items: center;
@@ -24,22 +24,13 @@
 	&::after {
 		content:"";
 		display:block;
-		border-top: 1px solid currentColor;
+		border-top: $border;
 		flex-grow: 1;
 		margin: 0 1rem;
 	}
 }
- 
+
 @import 'home/cv';
 @import 'home/hero';
-@import 'home/peach'; 
-@import 'home/tempHero'; 
-
-
-.btn-ecommerce {
-	display: inline-block;
-	padding: .5rem 1rem;
-	background-color: $primary;
-	color: #fff;
-	text-decoration: none;
-}
+@import 'home/peach';
+@import 'home/tempHero';

@@ -1,5 +1,5 @@
 <section class="home__section hero">
-    <header class="p-3">
+    <header class="">
         <div class="d-flex align-items-center">
             <img src="img/logo.svg" alt="William Lafortune-Caissy" height="60">
             <span class="fs-4 fw-500 ml-3">William Lafortune-Caissy</span>
@@ -13,7 +13,7 @@
                 <span class="mx-3">|</span>
                 <span>Réfléchis</span>
                 <span class="mx-3">|</span>
-                <span class="text-left">Modifiable</span>
+                <span class="text-left">Flexible</span>
             </span>
         </h1>
         <div class="mb-4">
@@ -25,6 +25,9 @@
             </a>
             <a class="mx-2 r-a" href="mailto:william.lafortune.caissy@gmail.com">
                 <img class="align-middle" src="img/home/gmail.png" alt="Gmail" width="36">
+            </a>
+            <a class="mx-2 r-a" href="https://github.com/williamLafortuneCaissy" target="_blank" rel="noopener noreferrer">
+                <img class="align-middle" src="img/home/github.png" alt="Github" width="36">
             </a>
         </div>
     </div>
