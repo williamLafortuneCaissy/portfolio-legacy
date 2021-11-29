@@ -1,0 +1,37 @@
+.project {
+    &__row {
+        display: flex;
+        flex-direction: column;
+        margin: 0 -$gutters*0.5;
+
+        @media screen and (min-width: map-get($mqs, md) ) {
+            flex-direction: row;
+        }
+    }
+
+    &__col {
+        flex-grow: 1;
+        padding: 0 $gutters*0.5;
+
+        @media screen and (min-width: map-get($mqs, md) ) {
+            width: 50%;
+            align-self: flex-end;
+        }
+    }
+
+    &__separator {
+        border-bottom: $border;
+        margin: $gutters*0.5 + 1rem;
+
+        @media screen and (min-width: map-get($mqs, md) ) {
+            border-bottom: 0;
+            border-left: $border;
+        }
+    }
+
+    &__img {
+        max-height: 10rem;
+        max-width: 10rem;
+        margin-bottom: 1rem;
+    }
+}

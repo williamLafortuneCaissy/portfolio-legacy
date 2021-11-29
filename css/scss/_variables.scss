@@ -21,3 +21,12 @@ $cvSeparatorSpacing: 3rem;
 $cvSeparatorSpacingV: 3rem + .25rem; // add couple of px to match the lineheight's spacing
 $cvBlockWidth: .5rem;
 $cvBlockSpacing: 4rem; // white bg's width
+
+$mqs: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;

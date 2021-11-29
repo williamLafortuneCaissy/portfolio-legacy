@@ -1180,6 +1180,42 @@ body {
   margin-right: -.05em;
 }
 
+.project__row {
+  display: flex;
+  flex-direction: column;
+  margin: -1rem;
+}
+@media screen and (min-width: 768px) {
+  .project__row {
+    flex-direction: row;
+  }
+}
+.project__col {
+  flex-grow: 1;
+  padding: 0 1rem;
+}
+@media screen and (min-width: 768px) {
+  .project__col {
+    width: 50%;
+    align-self: flex-end;
+  }
+}
+.project__separator {
+  border-bottom: 1px solid #dadada;
+  margin: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .project__separator {
+    border-bottom: 0;
+    border-left: 1px solid #dadada;
+  }
+}
+.project__img {
+  max-height: 10rem;
+  max-width: 10rem;
+  margin-bottom: 1rem;
+}
+
 .tempHero {
   padding: 1rem;
   display: grid;
