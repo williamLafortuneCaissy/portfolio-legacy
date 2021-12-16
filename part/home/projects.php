@@ -14,7 +14,9 @@
                 <img class="project__img" src="img/home/logoecom.png" alt="Logo Ecom">
                 <h3 class="my-0 fw-500">Projet e-commerce</h3>
                 <div class="">En cours de développent</div>
-                <a class="btn-primary mt-3" target="_blank" href="https://xd.adobe.com/view/84f947c1-e6d9-43f5-b624-1621cccb19fe-d1aa/?hints=off">Voir</a>
+                <a class="btn-primary mt-3" target="_blank" href="http://ecommerce.williamlafortunecaissy.ca/">Voir</a>
+                <a class="btn-secondary mt-3" target="_blank" href="https://xd.adobe.com/view/84f947c1-e6d9-43f5-b624-1621cccb19fe-d1aa/?hints=off">XD</a>
+                <a class="btn-secondary mt-3" target="_blank" href="https://github.com/williamLafortuneCaissy/ecommerce">Github</a>
             </div>
         </div>
     </div>
