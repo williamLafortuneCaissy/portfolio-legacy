@@ -25,39 +25,58 @@
 	    <div class="cv__row">
 		    <div class="cv__col--l">
 				<section class="cv__formation">
-					<h3>Formations et Expériences de travail</h3>
+					<h3 class="cv__formation_title">Expériences de travail</h3>
 
-					<div class="cv__formationItem">
+					<div class="cv__formation_item">
 						<div class="cv__employeur">
 							<a href="https://www.spordle.com/" target="_blank" rel="noopener noreferrer">
 								<img src="img/home/logoSpordle.png" alt="Spordle" width="50">
 							</a>
 							<div>
-								<div><strong>Intégrateur Web - Senior</strong></div>
-								<small>Spordle | août 2018 - août 2021</small>
+								<div><em class="h4">Spordle</em></div>
+								<small class="cv__employeur_date">août 2018 - août 2021</small>
 							</div>
 						</div>
-						<h4>Points clés</h4>
+						<div><strong>Intégrateur Web - Senior</strong></div>
 						<ul class="cv__keyList r-ul">
 							<li>Intégration de plusieurs projets en même temps</li>
 							<li>Analyse UI / UX des tâches demandées</li>
 							<li>Validation du code HTML / CSS</li>
 						</ul>
-						<h4>Clients importants</h4>
-						<div>Hockey Canada, Jeux du Québec, Rocket de Laval et plus!</div>
 					</div>
 
-					<div class="cv__formationItem">
+					<div class="cv__formation_item">
+						<div class="cv__employeur">
+							<a href="https://www.mediavore.ca/" target="_blank" rel="noopener noreferrer">
+								<img src="img/home/logoMediavore.png" alt="Mediavore" width="50">
+							</a>
+							<div>
+								<div><em class="h4">Médiavore</em></div>
+								<small class="cv__employeur_date">Été 2017</small>
+							</div>
+						</div>
+
+						<div><strong>Intégrateur Web - Junior</strong></div>
+						<ul class="cv__keyList r-ul">
+							<li>Création de nouvelles pages HTML / CSS</li>
+							<li>Ajustements de pages existantes HTML / CSS</li>
+						</ul>
+					</div>
+				</section>
+				<div class="cv__separator--h cv__intersect--r"></div>
+				<section class="cv__formation">
+					<h3 class="cv__formation_title">Formations</h3>
+					<div class="cv__formation_item">
 						<div class="cv__employeur">
 							<a href="https://www.cstj.qc.ca/" target="_blank" rel="noopener noreferrer">
 								<img src="img/home/logoTim.png" alt="Cégep de Saint-Jérôme" height="50">
 							</a>
 							<div>
-								<div><strong>Techniques d'intégration multimédia</strong></div>
-								<small>Cégep de Saint-Jérôme | 2019</small>
+								<div><em class="h4">Cégep de Saint-Jérôme</em></div>
+								<small class="cv__employeur_date">2015 - 2018</small>
 							</div>
 						</div>
-						<h4>Points clés</h4>
+						<div><strong>Techniques d'intégration multimédia</strong></div>
 						<ul class="cv__keyList r-ul">
 							<li>Conception de sites webs (Front-end / Back-end)</li>
 							<li>Design de maquettes web et autres</li>
@@ -66,23 +85,6 @@
 						</ul>
 					</div>
 
-					<div class="cv__formationItem">
-						<div class="cv__employeur">
-							<a href="https://www.mediavore.ca/" target="_blank" rel="noopener noreferrer">
-								<img src="img/home/logoMediavore.png" alt="Mediavore" width="50">
-							</a>
-							<div>
-								<div><strong>Intégrateur Web - Junior</strong></div>
-								<small>Médiavore | Été 2017</small>
-							</div>
-						</div>
-
-						<h4>Points clés</h4>
-						<ul class="cv__keyList r-ul">
-							<li>Création de nouvelles pages HTML / CSS</li>
-							<li>Ajustements de pages existantes HTML / CSS</li>
-						</ul>
-					</div>
 				</section>
 		    </div>
 			<div class="cv__separator--v cv__intersect--top"></div>
@@ -93,7 +95,7 @@
 					<ul class="cv__tagList r-ul">
 						<li class="cv__tag">HTML 5</li>
 						<li class="cv__tag">CSS 3</li>
-						<li class="cv__tag">Javascript</li> 
+						<li class="cv__tag">Javascript</li>
 						<li class="cv__tag">Sass</li>
 						<li class="cv__tag">React</li>
 						<li class="cv__tag">JIRA</li>
@@ -102,7 +104,7 @@
 						<li class="cv__tag">Visual Studio Code</li>
 					</ul>
 				</div>
-				<div class="cv__separator--h cv__intersect--left"></div>
+				<div class="cv__separator--h cv__intersect--l"></div>
 				<div class="cv__projects">
 					<h3>Projets récent</h3>
 
@@ -117,7 +119,7 @@
 							<small>6 semaines*</small>
 						</div>
 					</div>
-					
+
 					<div class="cv__project">
 						<a href="https://www.spordle.com/" target="_blank" rel="noopener noreferrer">
 							<img src="img/home/logoSpordle.png" alt="Spordle" width="50">
@@ -129,7 +131,7 @@
 							<small>12 semaines*</small>
 						</div>
 					</div>
-					
+
 					<div class="cv__project">
 						<a href="https://register.hockeycanada.ca/home" target="_blank" rel="noopener noreferrer">
 							<img src="img/home/logoHc.png" alt="Hockey Canada" width="50">
