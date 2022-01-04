@@ -95,9 +95,9 @@
 					<ul class="cv__tagList r-ul">
 						<li class="cv__tag">HTML 5</li>
 						<li class="cv__tag">CSS 3</li>
+						<li class="cv__tag">React</li>
 						<li class="cv__tag">Javascript</li>
 						<li class="cv__tag">Sass</li>
-						<li class="cv__tag">React</li>
 						<li class="cv__tag">JIRA</li>
 						<li class="cv__tag">Github desktop</li>
 						<li class="cv__tag">Sublime Text 3</li>
@@ -106,7 +106,7 @@
 				</div>
 				<div class="cv__separator--h cv__intersect--l"></div>
 				<div class="cv__projects">
-					<h3>Projets récent</h3>
+					<h3>Projets chez Spordle</h3>
 
 					<div class="cv__project">
 						<a href="https://www.rocketlaval.com/" target="_blank" rel="noopener noreferrer">
