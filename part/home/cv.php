@@ -19,7 +19,7 @@
 		</header>
 		<section class="cv__goals">
 			<h3>Objectifs de carrière</h3>
-			<p>Le <em>travail d'équipe</em>, pour moi est un élément-clé dans la  conception d'un projet. Je suis une personne <em>structurée, flexible et honnête</em> qui est à la recherche d'une <em>équipe dynamique</em> dans laquelle je vais m'intégrer rapidement. J'ai pour but d'<em>accroître mes compétences professionnelles</em> tout en <em>grandissant avec cette nouvelle équipe</em>.</p>
+			<p>Étant un expert HTML / CSS, j'ai récemment développé une passion pour la librairie JavaScript React. Avec 1 an d'expérience React à mon actif, je souhaite désormais approfondir mes connaissances avec cette technologie. Si vous êtes à la recherche d'un développeur React capable de donner un petit punch visuel à votre application, contactez-moi!</p>
 		</section>
 		<div class="cv__separator--h"></div>
 	    <div class="cv__row">

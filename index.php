@@ -13,7 +13,7 @@
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://www.williamlafortunecaissy.ca/">
         <meta property="og:title" content="William Lafortune-Caissy | Portfolio">
-        <meta property="og:description" content="Je suis un intégrateur web à la recherche d'une nouvelle équipe dans laquelle je vais m'intégrer aisément. Je peux travailler en HTML, CSS, JS, PHP et plus!">
+        <meta property="og:description" content="Je suis un intégrateur web à la recherche d'une nouvelle équipe dans laquelle je vais m'intégrer aisément. Je peux travailler en HTML, CSS, JS, PHP, React et plus!">
         <meta property="og:image" content="img/meta-image.png">
 
         <!-- favicon -->
