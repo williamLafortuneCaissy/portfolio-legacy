@@ -19,7 +19,7 @@
 		</header>
 		<section class="cv__goals">
 			<h3>Objectifs de carrière</h3>
-			<p>Étant un expert HTML / CSS, j'ai récemment développé une passion pour la librairie JavaScript React. Avec 1 an d'expérience React à mon actif, je souhaite désormais approfondir mes connaissances avec cette technologie. Si vous êtes à la recherche d'un développeur React capable de donner un petit punch visuel à votre application, contactez-moi!</p>
+			Le <em>travail d'équipe</em>, pour moi est un élément-clé dans la  conception d'un projet. Je suis une personne <em>structurée, flexible et honnête</em> qui est à la recherche d'une <em>équipe dynamique</em> dans laquelle je vais m'intégrer rapidement. J'ai pour but d'<em>accroître mes compétences professionnelles</em> tout en <em>grandissant avec cette nouvelle équipe</em>.
 		</section>
 		<div class="cv__separator--h"></div>
 	    <div class="cv__row">
@@ -34,7 +34,7 @@
 							</a>
 							<div>
 								<div><em class="h4">Spordle</em></div>
-								<small class="cv__employeur_date">août 2018 - août 2021</small>
+								<small class="cv__employeur_date">2018 - 2021</small>
 							</div>
 						</div>
 						<div><strong>Intégrateur Web - Senior</strong></div>
@@ -89,62 +89,27 @@
 		    </div>
 			<div class="cv__separator--v cv__intersect--top"></div>
 		    <div class="cv__col--r">
-				<div class="cv__tools">
-					<h3>Boîte à outils</h3>
-
-					<ul class="cv__tagList r-ul">
-						<li class="cv__tag">HTML 5</li>
-						<li class="cv__tag">CSS 3</li>
-						<li class="cv__tag">React</li>
-						<li class="cv__tag">Javascript</li>
-						<li class="cv__tag">Sass</li>
-						<li class="cv__tag">JIRA</li>
-						<li class="cv__tag">Github desktop</li>
-						<li class="cv__tag">Sublime Text 3</li>
-						<li class="cv__tag">Visual Studio Code</li>
-					</ul>
-				</div>
+				<h3>Mon expertise</h3>
+				<ul class="pl-3">
+					<li><em>HTML, CSS, SCSS</em></li>
+					<li><em>SEO, Responsive, Design,</em></li>
+					<li><em>React, JavaScript, Php</em></li>
+					<li>GIT, JIRA, </li>
+					<li>Adobe XD, Photoshop, Illustrator</li>
+					<li>Wordpress</li>
+				</ul>
 				<div class="cv__separator--h cv__intersect--l"></div>
-				<div class="cv__projects">
-					<h3>Projets chez Spordle</h3>
 
-					<div class="cv__project">
-						<a href="https://www.rocketlaval.com/" target="_blank" rel="noopener noreferrer">
-							<img src="img/home/logoRocket.png" alt="Rocket de Laval" width="50">
-						</a>
-						<div>
-							<a class="cv__link d-block" href="https://www.rocketlaval.com/en/" target="_blank" rel="noopener noreferrer">
-								www.rocketlaval.com
-							</a>
-							<small>6 semaines*</small>
-						</div>
-					</div>
-
-					<div class="cv__project">
-						<a href="https://www.spordle.com/" target="_blank" rel="noopener noreferrer">
-							<img src="img/home/logoSpordle.png" alt="Spordle" width="50">
-						</a>
-						<div>
-							<a class="cv__link d-block" href="https://www.spordle.com/" target="_blank" rel="noopener noreferrer">
-								www.spordle.com
-							</a>
-							<small>12 semaines*</small>
-						</div>
-					</div>
-
-					<div class="cv__project">
-						<a href="https://register.hockeycanada.ca/home" target="_blank" rel="noopener noreferrer">
-							<img src="img/home/logoHc.png" alt="Hockey Canada" width="50">
-						</a>
-						<div>
-							<a class="cv__link d-block" href="https://register.hockeycanada.ca/home" target="_blank" rel="noopener noreferrer">
-								register.hockeycanada.ca
-							</a>
-							<small>2 semaines*</small>
-						</div>
-					</div>
-					<small>* temps estimé sur un horaire temps plein.</small>
+				<div class="cv__personality">
+					<h3>Ma personnalité</h3>
+					<h4>Pointilleux.</h4>
+					<p>Pointilleux, perfectioniste, oeil de lynx, bref j'essaye d'être efficace et précis dans tout ce que je fais.</p>
+					<h4>Bonne gestion de temps.</h4>
+					<p>Je garde toujours un oeil sur le temps pour livrer une bonne balance entre le rapport qualité / temps.</p>
+					<h4>Organisé.</h4>
+					<p>Avec une mémoire de poisson, j'ai appris à utiliser plusieurs outils pour me garder efficasse: listes de tâches, alarmes, notes, horaires personnels, etc.</p>
 				</div>
+
 			</div>
 	    </div>
 	    <p class="show_print small mt-5">Généré en HTML / CSS à partir de mon portfolio: <a class="cv__link" href="http://www.williamlafortunecaissy.ca/" target="_blank" rel="noopener noreferrer">www.williamlafortunecaissy.ca</a></p>
