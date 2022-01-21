@@ -7,13 +7,14 @@
     </header>
     <div class="hero__container">
         <h1 class="mb-4 r-text">
-            <span class="hero__title d-block">Intégration de sites webs</span>
+            <span class="hero__title">
+                <span>Intégrateur / Développeur Web</span>
+            </span>
             <span class="hero__subtitle">
-                <span class="text-right">Structuré</span>
-                <span class="mx-3">|</span>
-                <span>Réfléchis</span>
-                <span class="mx-3">|</span>
-                <span class="text-left">Flexible</span>
+                <span>Design</span>
+                <span>Intégration</span>
+                <span>Developpement</span>
+                <span>Front-end</span>
             </span>
         </h1>
         <div class="mb-4">

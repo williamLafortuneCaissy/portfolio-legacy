@@ -14,12 +14,53 @@
         font-weight: 500;
         line-height: 1.2;
         margin-bottom: .5rem;
+        display: block;
+
     }
 
     &__subtitle {
         font-size: calc(1rem + 0.6vw);
-        display: grid;
-        grid-template-columns: 1fr auto auto auto 1fr
+        // display: flex;
+        // justify-content: space-between;
+
+        @media only screen and (max-width: 1023px) {
+            & {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            &>* {
+                padding: .5rem;
+
+                // works only with 2x2 grid
+                &:first-child {
+                    margin-right: -1px;
+                    margin-bottom: -1px;
+                    border-right: 1px solid $primary;
+                    border-bottom: 1px solid $primary;
+                }
+
+                &:last-child {
+                    border-left: 1px solid $primary;
+                    border-top: 1px solid $primary;
+                }
+            }
+        }
+        @media only screen and (min-width: 1024px) {
+            & {
+                display: flex;
+            }
+            &>* {
+                flex-grow: 1;
+                border-left: 1px solid black;
+
+                &:first-child {
+                    border-left: none;
+                }
+            }
+
+        }
+
     }
-    
+
 }
