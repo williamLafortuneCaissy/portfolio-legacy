@@ -102,12 +102,12 @@
 
 				<div class="cv__personality">
 					<h3>Ma personnalité</h3>
-					<h4>Pointilleux.</h4>
-					<p>Pointilleux, perfectioniste, oeil de lynx, bref j'essaye d'être efficace et précis dans tout ce que je fais.</p>
-					<h4>Bonne gestion de temps.</h4>
-					<p>Je garde toujours un oeil sur le temps pour livrer une bonne balance entre le rapport qualité / temps.</p>
-					<h4>Organisé.</h4>
-					<p>Avec une mémoire de poisson, j'ai appris à utiliser plusieurs outils pour me garder efficasse: listes de tâches, alarmes, notes, horaires personnels, etc.</p>
+					<h4>Organisé</h4>
+					<p>Pour moi, avoir plusieurs tâches à faire c'est une source de motivation. J'aime planifier et organiser mes tâches dans le but d'être efficace.</p>
+					<h4>Adaptatif</h4>
+					<p>En cas d'imprévu, je peux facilement modifier mon environnement de travail pour corriger le problème rapidement.</p>
+					<h4>Honnête</h4>
+					<p>Quand une tâche devient plus difficile que prévu, je n'hésite pas à prévenir mes collègues pour ne pas qu'on se retrouve dans une mauvaise situation à l'avenir.</p>
 				</div>
 
 			</div>
