@@ -63,4 +63,44 @@
 
     }
 
+    &__scrollDown {
+		grid-row-start: 3;
+		align-self: end;
+		display:inline-block;
+
+		&:hover {
+			color: inherit;
+		}
+
+		&--animation {
+			display: block;
+		}
+
+		&:hover &--animation {
+			animation-name: scrollDown;
+  			animation-duration: .5s;
+  			animation-iteration-count: infinite;
+  			animation-direction: alternate;
+		}
+	}
+
+	&__arrow {
+		display:inline-block;
+		margin: 0 auto;
+		width:.5rem;
+		height:.5rem;
+		border-bottom: 1px solid #212529;
+		border-left: 1px solid #212529;
+		transform: rotate(-45deg);
+	}
+
+}
+
+@keyframes scrollDown {
+	from {
+		transform: translateY(0);
+	}
+    to {
+    	transform: translateY(.5rem);
+    }
 }
