@@ -1,4 +1,4 @@
-@use "variables/type" as *;
+@use "../variables/type" as *;
 
 //font-size
 @each $key, $value in $font-size {
@@ -17,13 +17,13 @@
 //text-align
 @each $key, $value in $text-align {
 	.text-#{$key} {
-		text-align: $value;
+		text-align: $value !important;
 	}
 }
 
 //vertical align
-.align-top 		{ vertical-align: top; }
-.align-middle 	{ vertical-align: middle; }
-.align-baseline { vertical-align: baseline; }
-.align-bottom 	{ vertical-align: bottom; }
+.align-top 		{ vertical-align: top !important;}
+.align-middle 	{ vertical-align: middle !important;}
+.align-baseline { vertical-align: baseline !important;}
+.align-bottom 	{ vertical-align: bottom !important;}
 
