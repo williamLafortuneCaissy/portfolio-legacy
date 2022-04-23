@@ -35,6 +35,15 @@
 	}
 }
 
+.section_cv {
+	padding: 75px 0;
+
+	h2 {
+		text-align: center;
+		margin-bottom: 50px;
+	}
+}
+
 .cv {
 	line-height: 1.5;
 	background-color: #fff;
@@ -268,13 +277,18 @@
 }
 
 @media print {
-  @page { margin: 0; }
+	@page {
+		margin: 0;
+	}
 
 	html {
 		font-size: 14px;
 	}
 
-  body { margin: .25in; }
+  	body {
+	  	margin: .25in;
+	}
+
 
 	main > *:not(.section_cv) {
 		display: none;
