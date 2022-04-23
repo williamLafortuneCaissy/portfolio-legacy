@@ -1,0 +1,13 @@
+$positions :(
+	"static"	: static,
+	"relative"	: relative,
+	"absolute"	: absolute,
+	"fixed"		: fixed,
+	"sticky"	: sticky,
+);
+$positionProps :(
+	"top"	: top,
+	"bottom": bottom,
+	"left"	: left,
+	"right"	: right,
+);

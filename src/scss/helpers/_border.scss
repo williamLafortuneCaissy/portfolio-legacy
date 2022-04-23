@@ -1,0 +1,21 @@
+@use "../variables/colors" as *;
+
+.border {
+    border: $borderColor;
+}
+
+.border-left {
+    border-left: $borderColor;
+}
+
+.border-right {
+    border-right: $borderColor;
+}
+
+.border-top {
+    border-top: $borderColor;
+}
+
+.border-bottom {
+    border-bottom: $borderColor;
+}

@@ -1,3 +1,6 @@
+@use "../../variables/" as *;
+@use "../../variables/pages/home" as *;
+
 // currently only work at the start of the line (top or left)
 @mixin intersectBlock() {
 	& {
@@ -22,7 +25,7 @@
 	&::after {
 		content: "";
 		display: block;
-		border-top: $cvBlockWidth solid $colorPrimary; // border used because bgc is hard on print
+		border-top: $cvBlockWidth solid $primary; // border used because bgc is hard on print
 		width: $cvBlockWidth;
 
 		position: absolute;
@@ -169,7 +172,7 @@
 		.cv__separator--v {
 			flex-shrink: 0;
 			width: 2px;
-			background-color: $colorPrimary;
+			background-color: $primary;
 		}
 	}
 
@@ -182,7 +185,7 @@
 	}
 
 	&__separator--h {
-		border-top: 2px solid $colorPrimary;
+		border-top: 2px solid $primary;
 		margin-top: $cvSeparatorSpacing;
 		margin-bottom: $cvSeparatorSpacing;
 	}
@@ -210,7 +213,7 @@
 	}
 
 	&__separator--v {
-		border-left: 2px solid $colorPrimary;
+		border-left: 2px solid $primary;
 		margin-left: #{$cvSeparatorSpacingV};
 		margin-right: #{$cvSeparatorSpacingV};
 	}
@@ -223,8 +226,8 @@
 	&__printBtn {
 		appearance: none;
 		background-color: #fff;
-		border: 1px solid $colorPrimary;
-		background-color: $colorPrimary;
+		border: 1px solid $primary;
+		background-color: $primary;
 		color: #fff;
 		padding: .3rem .6rem;
 		cursor: pointer;
@@ -299,7 +302,7 @@
 			padding-bottom: .25rem;
 
 			// &__tag {
-			// 	border: 1px solid $colorPrimary;
+			// 	border: 1px solid $primary;
 			// }
 		}
 

@@ -1,0 +1,18 @@
+@use "../variables/position" as *;
+
+@each $key, $value in $positions {
+	.position-#{$key} {
+		position: $value;
+	}
+}
+
+
+@each $key, $value in $positionProps {
+	//generates .top-0 and .top-100
+	.#{$key}-0 {
+		#{$value}: 0;
+	}
+	.#{$key}-100 {
+		#{$value}: 100%;
+	}
+}

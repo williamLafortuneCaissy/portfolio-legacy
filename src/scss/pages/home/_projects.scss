@@ -1,3 +1,5 @@
+@use "../../variables/" as *;
+
 .project {
     &__row {
         display: flex;
@@ -20,12 +22,12 @@
     }
 
     &__separator {
-        border-bottom: $border;
+        border-bottom: 1px solid $borderColor;
         margin: $gutters*0.5 + 1rem;
 
         @media screen and (min-width: map-get($mqs, md) ) {
             border-bottom: 0;
-            border-left: $border;
+            border-left: 1px solid $borderColor;
         }
     }
 

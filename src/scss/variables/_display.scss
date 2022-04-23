@@ -10,12 +10,6 @@ $display: (
 	"none": none,
 );
 
-@each $key, $value in $display {
-	.d-#{$key} {
-		display: $value !important;
-	}
-}
-
 
 // flex utilities
 $align :(
@@ -23,16 +17,6 @@ $align :(
 	"start": flex-start,
 	"end": flex-end,
 );
-
-@each $key, $value in $align {
-	.align-items-#{$key} {
-		align-items: $value;
-	}
-	.align-self-#{$key} {
-		align-self: $value;
-	}
-}
-
 $justify :(
 	"center": center,
 	"start": flex-start,
@@ -40,9 +24,3 @@ $justify :(
 	"around": around,
 	"between": between,
 );
-
-@each $key, $value in $align {
-	.justify-content-#{$key} {
-		justify-content: $value;
-	}
-}

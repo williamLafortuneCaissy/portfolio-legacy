@@ -1,20 +1,22 @@
-.row {
-	display: flex;
-	flex-wrap: wrap;
-	margin-left: -$gutters * 0.5;
-	margin-right: -$gutters * 0.5;
-}
+@use "variables/grid" as *;
 
 @mixin col() {
 	padding-left: $gutters * 0.5;
 	padding-right: $gutters * 0.5;
 }
 
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: $gutters * -0.5;
+	margin-right: $gutters * -0.5;
+}
+
 .col {
 	@include col();
 }
 
-
+// TODO: make this responsive when needed
 // generates all col from .col-1-2 to .col-3-4 (considering $maxCol is 4)
 @for $d from 1 to $maxCol+1 {
 	@for $n from 1 to $maxCol+1 {
@@ -28,8 +30,6 @@
 		}
 	}
 }
-
-
 
 .container {
 	max-width: 1320px;

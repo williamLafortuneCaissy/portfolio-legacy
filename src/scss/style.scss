@@ -1,13 +1,11 @@
-@import 'scss/variables';
+@use 'reset';
 
-@import 'scss/reset';
+@use 'base';
+@use 'helpers';
 
-@import 'scss/base';
-@import 'scss/helpers/helper';
+@use 'grid';
+@use 'type';
 
-@import 'scss/grid';
-@import 'scss/type';
+@use 'buttons';
 
-@import 'scss/buttons';
-
-@import 'scss/pages/home';
+@forward 'pages/home';

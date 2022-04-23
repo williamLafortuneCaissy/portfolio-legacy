@@ -1,3 +1,9 @@
+@use '../../variables/colors' as *;
+
+@use 'cv';
+@use 'hero';
+@use 'projects';
+
 .home__section {
 	padding: 50px;
 	background-color: #fff;
@@ -24,14 +30,8 @@
 	&::after {
 		content:"";
 		display:block;
-		border-top: $border;
+		border-top: 1px solid $borderColor;
 		flex-grow: 1;
 		margin: 0 1rem;
 	}
 }
-
-@import 'home/cv';
-@import 'home/hero';
-@import 'home/peach';
-@import 'home/projects';
-@import 'home/tempHero';

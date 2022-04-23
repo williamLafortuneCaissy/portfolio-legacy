@@ -1,31 +1,11 @@
-$spacers :(
-	"0": 0,
-	"1": .25rem,
-	"2": .5rem,
-	"3": 1rem,
-	"4": 1.5rem,
-	"5": 2rem,
-);
-
-$props :(
-	"m" : margin,
-	"ml": margin-left,
-	"mr": margin-right,
-	"mt": margin-top,
-	"mb": margin-bottom,
-	"p" : padding,
-	"pl": padding-left,
-	"pr": padding-right,
-	"pt": padding-top,
-	"pb": padding-bottom,
-);
+@use "../variables/spacers" as *;
 
 @each $suffix, $value in $spacers {
-	
-	@each $prefix, $property in $props {
+
+	@each $prefix, $property in $spacersProps {
 		.#{$prefix}-#{$suffix} {
 			#{$property}: $value !important;
-		} 
+		}
 	}
 
 	//x and y values
@@ -45,5 +25,5 @@ $props :(
 		padding-top: $value;
 		padding-bottom: $value;
 	}
-	
+
 }
