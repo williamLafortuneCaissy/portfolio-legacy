@@ -2,38 +2,35 @@
 
 .project {
     &__row {
-        display: flex;
-        flex-direction: column;
-        margin: 0 -$gutters*0.5;
+        display: grid;
 
-        @media screen and (min-width: map-get($mqs, md) ) {
-            flex-direction: row;
+        @media screen and (min-width: map-get($mqs, sm) ) {
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 
     &__col {
-        flex-grow: 1;
-        padding: 0 $gutters*0.5;
 
-        @media screen and (min-width: map-get($mqs, md) ) {
-            width: 50%;
-            align-self: flex-end;
+        @media screen and (min-width: map-get($mqs, sm)) {
+            &:nth-last-child(1n + 3) {
+                border-bottom: 1px solid $borderColor;
+            }
+            &:nth-child(2n) {
+                border-left: 1px solid $borderColor;
+            }
         }
-    }
 
-    &__separator {
-        border-bottom: 1px solid $borderColor;
-        margin: $gutters*0.5 + 1rem;
+        padding: $gutters;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
 
-        @media screen and (min-width: map-get($mqs, md) ) {
-            border-bottom: 0;
-            border-left: 1px solid $borderColor;
-        }
     }
 
     &__img {
-        max-height: 10rem;
-        max-width: 10rem;
+        max-width: 100%;
+        height: auto;
         margin-bottom: 1rem;
     }
 }
