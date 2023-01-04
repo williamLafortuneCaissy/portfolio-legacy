@@ -1126,7 +1126,7 @@ html {
 }
 @media screen and (min-width: 576px) {
   .project__row {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 .project__col {
@@ -1135,14 +1135,6 @@ html {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-}
-@media screen and (min-width: 576px) {
-  .project__col:nth-last-child(1n+3) {
-    border-bottom: 1px solid #dadada;
-  }
-  .project__col:nth-child(2n) {
-    border-left: 1px solid #dadada;
-  }
 }
 .project__img {
   max-width: 100%;
