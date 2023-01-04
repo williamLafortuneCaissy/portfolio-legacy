@@ -5,20 +5,12 @@
         display: grid;
 
         @media screen and (min-width: map-get($mqs, sm) ) {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
         }
     }
 
     &__col {
 
-        @media screen and (min-width: map-get($mqs, sm)) {
-            &:nth-last-child(1n + 3) {
-                border-bottom: 1px solid $borderColor;
-            }
-            &:nth-child(2n) {
-                border-left: 1px solid $borderColor;
-            }
-        }
 
         padding: $gutters;
         display: flex;
