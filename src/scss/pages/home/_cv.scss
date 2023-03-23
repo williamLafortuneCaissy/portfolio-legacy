@@ -1,8 +1,8 @@
 @use "../../variables/" as *;
 @use "../../variables/pages/home" as *;
 
-// currently only work at the start of the line (top or left)
-@mixin intersectBlock() {
+// usually only 1 of these actually matter (ex horizontal -> topOrBottom dosen't matter)
+@mixin intersectBlock($topOrBottom, $leftOrRight) {
 	& {
 		position: relative;
 	}
@@ -16,8 +16,8 @@
 		background-color: #fff;
 
 		position: absolute;
-		left: calc(-#{$cvBlockSpacing} * 0.5 - 1px); // -spacing/2 - border width/2
-		top: calc(-#{$cvBlockSpacing} * 0.5 - 1px); // -spacing/2 - border height/2
+		#{$leftOrRight}: calc(-#{$cvBlockSpacing} * 0.5 - 1px); // -spacing/2 - border width/2
+		#{$topOrBottom}: calc(-#{$cvBlockSpacing} * 0.5 - 1px); // -spacing/2 - border height/2
 		z-index: 1;
 	}
 
@@ -29,8 +29,8 @@
 		width: $cvBlockWidth;
 
 		position: absolute;
-		left: calc(-#{$cvBlockWidth} * 0.5 - 1px); // -width/2 - border width/2
-		top: calc(-#{$cvBlockWidth} * 0.5 - 1px); // -height/2 - border height/2
+		#{$leftOrRight}: calc(-#{$cvBlockWidth} * 0.5 - 1px); // -width/2 - border width/2
+		#{$topOrBottom}: calc(-#{$cvBlockWidth} * 0.5 - 1px); // -height/2 - border height/2
 		z-index: 1;
 	}
 }
@@ -128,8 +128,6 @@
 				margin-bottom: 0;
 			}
 		}
-
-
 	}
 
 
@@ -168,7 +166,7 @@
 	}
 
 	&__expertiseList {
-		columns: 2;
+		// padding-left: 1rem
 	}
 
 
@@ -208,12 +206,12 @@
 
 	&__intersect--l {
 		margin-left: -$cvSeparatorSpacingV;
-		@include intersectBlock();
+		@include intersectBlock(top, left);
 	}
 
 	&__intersect--r {
 		margin-right: -$cvSeparatorSpacingV;
-		@include intersectBlock();
+		@include intersectBlock(top, right);
 
 		// hardcoded fix for right intersection block
 		&::after,
@@ -234,9 +232,13 @@
 		margin-right: #{$cvSeparatorSpacingV};
 	}
 
-	&__intersect--top {
+	&__intersect--t {
 		margin-top: -$cvSeparatorSpacing;
-		@include intersectBlock();
+		@include intersectBlock(top, left);
+	}
+	&__intersect--b {
+		margin-bottom: -$cvSeparatorSpacing;
+		@include intersectBlock(bottom, left);
 	}
 
 	&__printBtn {
@@ -321,10 +323,6 @@
 			box-shadow: none;
 			padding: .75rem;
 			padding-bottom: .25rem;
-
-			// &__tag {
-			// 	border: 1px solid $primary;
-			// }
 		}
 
 	}
