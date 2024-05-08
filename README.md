@@ -1,9 +1,10 @@
 # portfolio
 
 https://williamlafortunecaissy.github.io/portfolio/
+
 **une nouvelle version de mon portfolio est en cours de développement**
 
-Simple portfolio de William Lafortune-Caissy
+Petit Portfolio de William Lafortune-Caissy
 fait avec
 
 - Scss
